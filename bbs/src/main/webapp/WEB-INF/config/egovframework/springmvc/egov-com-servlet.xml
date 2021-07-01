@@ -15,11 +15,13 @@
 	
 	<!-- For Pagination Tag -->
 	<bean id="imageRenderer" class="egovframework.com.cmm.ImagePaginationRenderer"/>
+	<bean class="bbs.common.service.BBSPaginationRenderer" id="portalBbsRenderer"/>
 
 	<bean id="paginationManager" class="egovframework.rte.ptl.mvc.tags.ui.pagination.DefaultPaginationManager">
 		<property name="rendererType">
 			<map>
 				<entry key="image" value-ref="imageRenderer"/>
+				<entry key="bbs" value-ref="portalBbsRenderer"/>
 			</map>
 		</property>
 	</bean>
