@@ -62,7 +62,7 @@ input[type="radio"]:checked + label::after{content:'';}
 
 input[type="checkbox"] + label{ font-size: 1.063em; }
 input[type="checkbox"] + label::before{width:24px; height:24px; border: 1px solid #dcdcdc; }
-input[type="checkbox"]:checked + label::before{background: #3959c5 url(../images/ico_checkbox.png) no-repeat 50% / 12px;}
+input[type="checkbox"]:checked + label::before{background: #3959c5 url(../../images/bbs/ico_checkbox.png) no-repeat 50% / 12px;}
 
 /*-- 라디오 --*/
 input[type="radio"] + label::before,

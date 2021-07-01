@@ -58,7 +58,7 @@
 		SELECT 	count(bd_no)
 				
 		FROM 	board
-		WHERE 	fixtop = "0"
+		WHERE 	1=1
 		<choose>
 			<when test="searchCnd1 == 1">
 				AND bd_title LIKE CONCAT('%',#{searchWrd} ,'%')

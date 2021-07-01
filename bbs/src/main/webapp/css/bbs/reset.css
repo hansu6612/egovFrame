@@ -4,19 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @font-face{
     font-family:'NEXON Lv2 Gothic';
-    src:url('../font/NEXON Lv2 Gothic.ttf') format('truetype');
+    src:url('../../font/bbs/NEXON Lv2 Gothic.ttf') format('truetype');
 }
 @font-face{
     font-family:'NEXON Lv2 Gothic Bold';
-    src:url('../font/NEXON Lv2 Gothic Bold.ttf') format('truetype');
+    src:url('../../font/bbs/NEXON Lv2 Gothic Bold.ttf') format('truetype');
 }
 @font-face{
     font-family:'paybooc ExtraBold';
-    src:url('../font/paybooc ExtraBold.ttf') format('truetype');
+    src:url('../../font/bbs/paybooc ExtraBold.ttf') format('truetype');
 }
 @font-face{
     font-family:'Roboto-Regular';
-    src:url('../font/Roboto-Regular.ttf') format('truetype');
+    src:url('../../font/bbs/Roboto-Regular.ttf') format('truetype');
 }
 
 *{
@@ -118,7 +118,7 @@ select{
     font-size: 0.938em;
     border-radius: 2px;
     letter-spacing: -0.4px; 
-    background:url(../images/select.png) no-repeat 50% / 8px; 
+    background:url(../../images/bbs/select.png) no-repeat 50% / 8px; 
     background-position-x:calc(100% - 15px); 
     appearance:none; /* 네이티브 화살표 제거*/ 
     -webkit-appearance:none; /* 네이티브 화살표 제거*/
@@ -127,7 +127,7 @@ select{
 }
 footer select{
     letter-spacing: -0.4px; 
-    background:url(../images/footer_select.png) no-repeat 50% / 8px; 
+    background:url(../../images/bbs/footer_select.png) no-repeat 50% / 8px; 
     background-position-x:calc(100% - 15px); 
     appearance:none; /* 네이티브 화살표 제거*/ 
     -webkit-appearance:none; /* 네이티브 화살표 제거*/
