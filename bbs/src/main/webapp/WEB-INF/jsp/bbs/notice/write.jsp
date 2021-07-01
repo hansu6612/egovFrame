@@ -74,6 +74,12 @@ function fn_checked(obj){
 		obj.value = "0";
 	}
 } 
+function fn_selectFile(){
+	 $("#egovfile_1").click();
+}
+function fn_changeFile(){
+	 $("#file_path").val($("#egovfile_1").val());
+}
 </script>
 <%-- <form:form commandName="noticeWrite" name="noticeWrite" method="post" enctype="multipart/form-data"> --%>
 <form commandName="noticeWrite" name="noticeWrite" method="post">
@@ -127,8 +133,12 @@ function fn_checked(obj){
                             <th>첨부파일</th>
                             <td colspan="3" class="file">
                                 <div>
-                                    <input type="text" class="inputW600">
-                                    <button type="button" class="btn12 btn_grey">파일선택</button>
+                                <!-- <input type="text" name="" id="file_path" title="파일첨부" readonly>
+                                <button type="button" onclick="fn_selectFile();" class="lightRed">파일첨부</button>
+                                <input type="file" name="file" id="egovfile_1" onchange="fn_changeFile()" style="display:none;"> -->
+                                    <input type="text" name="" class="inputW600" id="file_path" title="파일첨부" readonly>
+                                    <button type="button" class="btn12 btn_grey" onclick="fn_selectFile();">파일선택</button>
+                                    <input type="file" name="file" id="egovfile_1" onchange="fn_changeFile()" style="display:none;">
                                 </div>
                                 <div>
                                     <p>협의체 네트워킹 소개.pdf</p>
