@@ -30,6 +30,19 @@
 		ORDER BY fixtop DESC, bd_no DESC
 		LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
 	</select>
+	<select id="noticeFixList" resultType="egovMap">
+		SELECT		bd_no,
+					bd_title, 
+					DATE_FORMAT(bd_cre_date, '%Y-%m-%d') as bd_cre_date,
+					bd_writer,
+					bd_count, 
+					fixtop
+
+		FROM		board
+		WHERE		fixtop = '1'
+		
+		ORDER BY bd_no DESC
+	</select>
 	
 	<insert id="noticeInsert" >
 		INSERT INTO board(

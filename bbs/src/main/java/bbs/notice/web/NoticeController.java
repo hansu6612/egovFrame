@@ -46,10 +46,12 @@ public class NoticeController {
 		searchVO.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());	
 		                                                                               
 		List<?> resultList = noticeService.noticeList(searchVO);
+		List<?> fix = noticeService.noticeFixList(searchVO);
 		int totalCnt = noticeService.noticeListCnt(searchVO);
 		
 		paginationInfo.setTotalRecordCount(totalCnt);
 		
+		model.addAttribute("fixtop",fix);
 		model.addAttribute("paginationInfo", paginationInfo);
 		model.addAttribute("searchVO", searchVO);
 		model.addAttribute("resultList", resultList);

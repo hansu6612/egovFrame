@@ -55,5 +55,10 @@ public class NoticeServiceImpl extends EgovAbstractServiceImpl implements Notice
 		noticeDAO.noticeViewCount(noticeVO);
 	}
 
+	@Override
+	public List<?> noticeFixList(SearchVO searchVO) throws Exception {
+		return noticeDAO.noticeFixList(searchVO);
+	}
+
 
 }

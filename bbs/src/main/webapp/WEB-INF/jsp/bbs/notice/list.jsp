@@ -108,19 +108,7 @@ function fn_reset_searchWrd(){
                             </tr>
                         </thead>
                         <tbody>   
-		                    <c:forEach items="${resultList}" var="noticeVO" varStatus="status">
-		                    <c:choose>
-		                    	<c:when test="${noticeVO.fixtop == '0'}">
-		                   	        <tr>
-				                        <td>${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo-1) * paginationInfo.recordCountPerPage + status.index) }</td>
-				                        <td><a href="#LINK"  onclick="fn_detail('${noticeVO.bdNo}')">${noticeVO.bdTitle}</a></td>
-				                        <td></td>
-				                        <td>${noticeVO.bdWriter}</td>
-				                        <td>${noticeVO.bdCreDate}</td>
-				                        <td>${noticeVO.bdCount}</td>
-			                   		</tr>
-		                    	</c:when>
-		                    	<c:when test="${noticeVO.fixtop =='1'}">
+                         	<c:forEach items="${fixtop}" var="noticeVO" varStatus="status">
 		                    		<tr class="notice_top">
 				                        <td><span>공지</span></td>
 				                        <td ><a href="#LINK"  onclick="fn_detail('${noticeVO.bdNo}')">${noticeVO.bdTitle}</a></td>
@@ -129,9 +117,20 @@ function fn_reset_searchWrd(){
 				                        <td>${noticeVO.bdCreDate}</td>
 				                        <td>${noticeVO.bdCount}</td>
 			                    	</tr>
-		                    	</c:when>
-		                    </c:choose>
 		                    </c:forEach>
+		                    <c:forEach items="${resultList}" var="noticeVO" varStatus="status">
+		                    
+		                   	        <tr>
+				                        <td>${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo-1) * paginationInfo.recordCountPerPage + status.index) }</td>
+				                        <td><a href="#LINK"  onclick="fn_detail('${noticeVO.bdNo}')">${noticeVO.bdTitle}</a></td>
+				                        <td></td>
+				                        <td>${noticeVO.bdWriter}</td>
+				                        <td>${noticeVO.bdCreDate}</td>
+				                        <td>${noticeVO.bdCount}</td>
+			                   		</tr>
+		                    </c:forEach>
+		  
+		                    
                         </tbody>
                     </table>
                     

@@ -15,6 +15,9 @@ public class NoticeDAO extends EgovComAbstractDAO {
 	public List<?> noticeList (SearchVO searchVO) throws Exception {
 		return selectList("noticeList", searchVO);
 	}
+	public List<?> noticeFixList (SearchVO searchVO) throws Exception {
+		return selectList("noticeFixList", searchVO);
+	}
 	
 	public int noticeListCnt(SearchVO searchVO) throws Exception {
 		return (Integer) selectOne("noticeListCnt", searchVO);
