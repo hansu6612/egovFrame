@@ -1,0 +1,306 @@
+/*------------------------------- 로그인 -------------*/
+.login_area{ width: 360px; margin: 0 auto; margin-top: 46px;}
+.login_area input[type="text"],
+.login_area input[type="password"]{ width: 100%; height: 48px; margin-top: 8px;}
+
+.login_area input[type="checkbox"] + label{ font-size: 0.938em; letter-spacing: -0.6px; color: #1b1b1b; margin: 12px 0 17px; }
+.login_area input[type="checkbox"] + label::before{width:24px; height:24px;background: #c6c7c8 url(../images/ico_checkbox.png) no-repeat 50% / 12px; }
+.login_area input[type="checkbox"]:checked + label::before{background:#3959c5 url(../images/ico_checkbox.png) no-repeat 50% / 12px;}
+
+.login_area div{ display: flex; justify-content: center; align-items: center; margin: 22px 0 28px; }
+.login_area div a{ font-size: 0.938em; letter-spacing: -0.6px; color: #1b1b1b; }
+.login_area div span{ color: #c9c9c9; margin: 0 10px; }
+
+
+
+/*------------------------------- 아이디 비밀번호 찾기 -------------*/
+.findIdPw_area{ width: 360px; margin: 0 auto; margin-top: 63px; }
+.findIdPw_area>div{ width: 100%; display: inline-block; }
+.findIdPw_area>div a{ font-size: 1.063em; color: #444; letter-spacing: -0.68px; line-height: 60px; width: 50%; height: 60px; text-align: center; float: left; border: 1px solid #bfbfbf; border-bottom:3px solid #000; }
+.findIdPw_area>div a.active{ font-weight: bold; color: #000; border: 3px solid #000; border-bottom: none; }
+
+.find_area{ border: 1px solid #bfbfbf; margin-top: 30px; margin-bottom: 30px; }
+.find_area > p{ text-align: center; margin: 33px 0; font-weight: bold; line-height: 24px; }
+.find_area .find_box{ display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e6e6e6; padding: 12px 18px; }
+.find_area .find_box:last-child{ border-bottom: none; }
+.find_area .find_box p{ font-size: 0.938em; font-weight: bold; letter-spacing: -0.6px; }
+.find_area .find_box>input{ width: 220px; height: 40px; }
+.find_area .find_box div{ width: 220px; display: flex; justify-content: space-between; }
+.find_area .find_box div input{ width: 70px; height: 40px; }
+
+
+
+/*------------------------------- 회원가입 -------------*/
+.join_wrap{ width: 740px; margin: 0 auto; margin-top: 52px; }
+
+.join_area{ width: 100%; border:1px solid #bfbfbf; margin-top: 16px; margin-bottom: 30px; }
+
+/*-- join1 --*/
+.join_boxL{ border-bottom: 1px solid #e6e6e6; padding: 25px 24px 21px 24px; display: flex; align-items: center; justify-content: space-between; }
+
+.join_boxL input[type="checkbox"] + label{ font-size: 1em; letter-spacing: -0.68px; }
+.join_boxL input[type="checkbox"] + label::before{width:24px; height:24px;background:  url(../images/ico_uncheck.png) no-repeat 50% / 12px; border: none; }
+.join_boxL input[type="checkbox"]:checked + label::before{background: url(../images/ico_check.png) no-repeat 50% / 12px;}
+.join_boxL input[id="checkAll"] + label{ font-size: 1.063em; font-weight: bold; }
+.join_boxL input[id="checkAll"] + label::before{width:24px; height:24px;background: #c6c7c8 url(../images/ico_checkbox.png) no-repeat 50% / 12px; }
+.join_boxL input[id="checkAll"]:checked + label::before{background: #3959c5 url(../images/ico_checkbox.png) no-repeat 50% / 12px;}
+
+.join_boxL>a{ font-size: 0.875em; color: #3959c5; letter-spacing: -0.56px; }
+.join_boxL>a:hover{ border-bottom: 1px solid #3959c5; }
+
+.join_boxL>p{ font-size: 1.063em; font-weight: bold; }
+
+
+/* 약관 */
+.clause_wrap{ display: none; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; }
+.clause_box{ display: none; width: 85%; max-width: 1100px; height: 80vh; position: relative; margin: 5% auto; }
+
+.clauseTop{ width: 100%; padding: 40px 40px 30px 40px; border-bottom: 1px solid #606060; display: flex; justify-content: space-between; align-items: center;  background-color: #fff; }
+.clauseTop h1{ font-size: 1.5em; }
+.clause{ height: 80%; padding: 30px 40px; font-size: 0.938em; letter-spacing: -0.6px; background-color: #fff; overflow-y: scroll; }
+.clause dt,
+.clause p{ margin-top: 30px; font-weight: bold;}
+.clause dl dt:first-child{ margin-top: 10px; }
+.clause p{ font-size: 1.25em; }
+.clause dt,
+.clause li,
+.clause dd{line-height: 24px;}
+.clause ol{ padding-left: 10px; }
+.clause ul{ padding-left: 10px; }
+
+
+
+/*-- join2 --*/
+.join_box{ border-bottom: 1px solid #e6e6e6; padding: 14px 16px 11px 20px; display: flex; align-items: center; }
+.join_box:last-child{ border-bottom: none; }
+.join_box>p{ font-size: 1em; font-weight: bold; letter-spacing: -0.6px; width: 100px; display: inline-block; }
+.join_box input[type="text"],
+.join_box select{ height: 40px; border: 1px solid #c9c9c9; }
+
+.join_box input.inputId{ width: 185px; margin-right: 4px; }
+.join_box input.inputName,
+.join_box input.inputPw{ width: 220px; }
+
+.join_box input.inputTel{ width: 60px; margin-right: 4px; }
+.join_box input.inputCertified{ width: 175px; margin-right: 4px; }
+
+.join_box input.inputMail1{ width: 130px; margin-right: 3px; }
+.join_box input.inputMail2{ width: 110px; margin-left: 3px; }
+.join_box select.inputMail{ width: 110px; padding: 0 10px; margin-left: 5px; }
+
+.join_box input.inputCompany1,
+.join_box input.inputCompany2{ width: 260px; margin-right: 4px; }
+.join_box .selectCompany_box{ width: calc(100% - 94px); display: flex; justify-content: space-between; }
+.join_box select.inputCompany{ width: calc(100% / 3); margin-right: 5px; padding: 0 12px; }
+.join_box select.inputCompany:last-child{ margin-right: 0; }
+.join_box input.inputFull{ width: calc(100% - 94px); }
+
+/* 기관/기업 검색 */
+.companySearch_wrap{ display: none; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; }
+.companySearch_box{ width: 85%; max-width: 740px; height: 80vh; position: relative; margin: 3% auto; }
+
+.companySearch_top{ width: 100%; padding: 21px 21px 18px 21px; background-color: #404040; display: flex; justify-content: space-between; align-items: center; }
+.companySearch_top h1{ font-size: 1.5em; letter-spacing: -0.96px; color: #fff; }
+.companySearch{ height: 95%; padding: 19px 20px 92px 20px; background-color: #fff; overflow-y: scroll; }
+
+/* 기관/기업 등록 */
+.companyRegist_wrap{ display: none; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; }
+.companyRegist_box{ width: 85%; max-width: 740px; height: 80vh; position: relative; margin: 3% auto; }
+
+.companyRegist_top{ width: 100%; padding: 21px 21px 18px 21px; background-color: #404040; display: flex; justify-content: space-between; align-items: center; }
+.companyRegist_top h1{ font-size: 1.5em; letter-spacing: -0.96px; color: #fff; }
+.companyRegist{ height: 95%; padding: 19px 20px 92px 20px; background-color: #fff; overflow-y: scroll; }
+
+
+.companyRegist input,
+.companyRegist select{ height: 32px; margin-right: 5px; border: 1px solid #c9c9c9; }
+.companyRegist .inputFile{ width: calc( 100% - 79px ); max-width: 400px; }
+
+/*-- join3 --*/
+.join_3{ width: 360px; margin: 0 auto; margin-top: 140px; text-align: center; }
+.join_3 img{  }
+.join_3 h2{ font-size: 2em; letter-spacing: -1.28px; line-height: 22px; margin-top: 51px; }
+.join_3 p{ font-size: 1em; letter-spacing: -0.64px; line-height: 24px; margin-top: 26px; margin-bottom: 40px; }
+.join_3 a{ margin: 0 4px; }
+
+
+/*------------------------------- 비밀번호 변경 -------------*/
+.changePw_area{ width: 360px; margin: 0 auto; }
+.changePw_area>div{ width: 100%; }
+
+.change_area{ border: 1px solid #bfbfbf; margin-top: 30px; margin-bottom: 30px; }
+.change_area > p{ text-align: center; margin: 33px 0; font-weight: bold; }
+.change_area .change_box{ display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e6e6e6; padding: 12px 18px; }
+.change_area .change_box:last-child{ border-bottom: none; }
+.change_area .change_box p{ font-size: 0.938em; font-weight: bold; letter-spacing: -0.6px; }
+.change_area .change_box>input{ width: 60%; max-width: 220px; height: 40px; }
+
+
+
+/*------------------------------- 개방형 혁신랩 -------------*/
+/*카테고리*/
+.innovation_category{ display: flex; justify-content: space-around; padding-bottom: 50px; margin-bottom: 80px; border-bottom: 1px solid #d2d2d2; }
+.innovation_category div{ width: 100%; height: 100%; background-color: rgba(0,0,0,0.3); }
+.innovation_category a{ position: relative; max-width: 270px; width: 18%; height: 8.8em; background: url(../images/category_bg.png) no-repeat; font-size: 1.063em; color: #fff; font-weight: bold; line-height: 1.375em; text-align: center; }
+.innovation_category a span{ position: absolute; top: 0; left: 0; width: 50px; height: 50px; text-align: center; line-height: 50px; font-size: 1em; color: #fff; }
+.innovation_category a span.floor1{ background-color: #ec5741; }
+.innovation_category a span.floor2{ background-color: #42b66e; }
+.innovation_category a span.floor4{ background-color: #4d86d2; }
+.innovation_category a p{ width: 100%; font-size: 1.063em; color: #fff; font-weight: bold; line-height: 1.375em; text-align: center; position: absolute; top: 50%; transform: translateY(-50%);}
+
+.innovation_category a.on{ box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.5); }
+.innovation_category a.on div{ background-color: rgba(0,0,0,0.8); }
+.innovation_category a.on p{ font-size: 2em; }
+
+/*슬라이드*/
+.inovationSlide{ width: 100%; display: flex; justify-content: space-between; }
+.inovationSlide section{ width: 46.75%; display: flex; justify-content: space-between; }
+.inovationSlide .bx-wrapper{ width: 79.6%; }
+.inovationSlide .bxslider img{ width: 100%; }
+
+.inovationSlide #bx-pager{ margin-left: 1.6%; }
+.inovationSlide #bx-pager a{ width: 100%; height: 23.48%; margin-top: 9.2%; display: block; overflow: hidden; }
+.inovationSlide #bx-pager a img{ width: 100%; }
+.inovationSlide #bx-pager a:first-child{ margin-top: 0; }
+.inovationSlide #bx-pager a.active{ border: 3px solid #000; }
+.inovationSlide #bx-pager a.pager_non{ background-color: #ededed; position: relative; }
+.inovationSlide #bx-pager a.pager_non img{ width: auto; margin: 0 auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+
+/*예약현황*/
+.inovation_resolvation{ margin-top: 60px; }
+
+.ino_calendarOption p{ font-size: 0.938em; position: relative; margin-right: 2.4em;}
+.ino_calendarOption p::before{ content: ""; width: 1em; height: 1em; border-radius: 100%; display: inline-block; position: absolute; top: 50%; left: -50%; transform: translateY(-50%); }
+.ino_calendarOption p.holiday::before{ background-color: #9d9ca1; border: 1px solid #848589; }
+.ino_calendarOption p.close::before{ background-color: #5d8df0; border: 1px solid #3873ed; }
+.ino_calendarOption button{ width: 2em; height: 2em; background-color: #ddd; border-radius: 2px; margin-right: 0.5em; }
+.ino_calendarOption button:last-child{ margin-right: 0; margin-left: 0.5em; }
+.ino_calendarOption button img{ width: 0.625em; height: 1.63em; }
+.ino_calendarOption select{ height: 2em; font-size: 1em; padding-left: 0.75em; padding-right: 3em; margin-left: 4px;  }
+.ino_calendarOption select:first-child{ margin-left: 0; }
+
+.inovation_calendar{ border: 1px solid #d2d2d2; width: 100%; display: flex; justify-content: space-between; margin-top: 8px; }
+.inovation_calendar div{ width: 100%; height: 5em; border-right: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+.inovation_calendar div.holiday{ background-color: #9d9ca1; }
+.inovation_calendar div.close { background-color: #5d8df0; }
+.inovation_calendar div p{ width: 100%; height: 3em; line-height: 3em; background-color: #f4f4f4; border-bottom: 1px solid #e6e6e6; text-align: center; }
+
+
+/*------------------------------- 성적서 진위여부 확인 -------------*/
+.transcript{ text-align: center; margin: 0 auto; margin-top: 72px; }
+.transcript p{ font-size: 1.125em; letter-spacing: -0.72px; line-height: 30px; }
+.transcript h2{ font-size: 2em; letter-spacing: -1.28px; margin-top: 103px; }
+.transcript input{ font-size: 1.375em; border: none; text-align: center; margin-top: 21px; width: 80%; max-width: 800px; height: 70px; background-color: #e8e8e8; }
+.transcript input::placeholder{ color: #bfbfbf; }
+.transcript a{ display: block; margin: 0 auto; margin-top: 24px; }
+
+
+
+/*------------------------------- 장비검색/예약 -------------*/
+.reservation_text{ padding: 40px 0; text-align: right; border-bottom: 1px solid #e1e1e1; }
+.reservation_text p{ font-size: 1.063em; letter-spacing: -0.68px; line-height: 1.5em; }
+.reservation_text h3{ font-size: 1.5em; letter-spacing: -0.96px; line-height: 1.5em; margin-top: 1.25em; }
+
+/* 예약정보 */
+.reservation_wrap{ display: none; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; }
+.reservation_box{ width: 85%; max-width: 1560px; height: 80vh; position: relative; margin: 3% auto; }
+
+.reservation_top{ width: 100%; padding: 21px 21px 18px 21px; background-color: #404040; display: flex; justify-content: space-between; align-items: center; }
+.reservation_top h1{ font-size: 1.5em; letter-spacing: -0.96px; color: #fff; }
+.reservation{ height: 95%; padding: 19px 20px 92px 20px; background-color: #fff; overflow-y: scroll; }
+
+
+
+/*------------------------------- 반응형 -------------*/
+@media screen and (max-width:1600px){
+    .inovationSlide section{ width: 748px; }
+}
+@media screen and (max-width:1130px){
+    .innovation_category div{ background-color: rgba(0,0,0,0.55); }
+    .innovation_category a{background: none; }
+    .innovation_category a.on div{ background-color: rgba(0,0,0,0.9); }
+    .innovation_category a span{ width: 34px; height: 34px; line-height: 34px; font-size: 0.8em; }
+    
+    .innovation_category a.on p{ font-size: 1.8em; }
+    
+    .inovationSlide{display: block;}
+    .inovationSlide section{ width: 100%; }
+    .inovationSlide .bx-wrapper{ width: 100%; }
+    .inovationSlide .bxslider li{ width: 70vw !important; }
+    .inovationSlide .bxslider img{ width: 80%; }
+    
+    .inovationSlide #bx-pager{ display: none; }
+    
+    table.st04{ width: 100%; margin-left: 0; margin-top: 20px; }
+    
+    .inovation_calendar{ display: inline-table; }
+    .inovation_calendar div{ width: 100%; max-width: calc(100% / 16); display: inline-block; }
+}
+/*---  모바일  --*/
+@media screen and (max-width:800px){
+    .join_wrap{ width: 95%; }
+    
+    .innovation_category a p{ font-size: 0.867em; }
+    .innovation_category a.on p{ font-size: 1.5em; }
+}
+@media screen and (max-width:600px){
+    .join_boxL input[type="radio"] + label{ float: none; margin-bottom: 30px; }
+    .join_boxL input[type="radio"] + label:last-child{ margin-bottom: 0; }
+    
+    .join_box input.inputId{ width: calc(100% - 170px); }
+    
+    .join_box input.inputTel{ width: calc( ( 100% - 190px ) / 3 ); }
+    .join_box input.inputCertified{ width: calc( 100% - 180px ); }
+    
+    .join_box input.inputMail1,
+    .join_box input.inputMail2,
+    .join_box select.inputMail{ width: calc( ( 100% - 116px ) / 3 ); }
+    
+    .join_box input.inputCompany1{ width: calc( 100% - 180px ); }
+    
+    .join_box input.inputName,
+    .join_box input.inputPw,
+    .join_box input.inputCompany2{ width: calc(100% - 100px); }
+    
+    .join_box .selectCompany_box{ display: block; }
+    .join_box select.inputCompany{ width: 100%; margin-bottom: 5px; }
+    .join_box select.inputCompany:last-child{ margin-bottom: 0; }
+}
+@media screen and (max-width:550px){
+    .innovation_category a span{ width: 24px; height: 24px; line-height: 24px; }
+    
+    .inovation_resolvation .table_title{ align-items: flex-start; }
+    .ino_calendarOption{ display: block !important; }
+    .ino_calendarOption p:last-child{ margin-right: 0; }
+    .ino_calendarOption div{ justify-content: flex-end; margin-top: 14px; }
+    .ino_calendarOption div:first-child{ margin-top: 0; }
+    
+    .inovation_calendar div{ width: 100%; max-width: calc(100% / 7); display: inline-block; }
+}
+@media screen and (max-width:500px){
+    .login_area{ width: 95%; }
+    
+    .findIdPw_area{ width: 95%; }
+    .find_area .find_box>input,
+    .find_area .find_box div{ width: 61%; }
+    .find_area .find_box div input{ width: 30%; }
+    
+    .join_3{ width: 95%; }
+    
+    .changePw_area{ width: 95%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
