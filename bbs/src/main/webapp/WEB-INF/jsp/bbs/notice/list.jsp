@@ -48,7 +48,7 @@ function fn_reset_searchWrd(){
                 </div>
                 
                 <div class="category">
-                    <a href="/egovframework-all-in-one/notice/list.do" class="on">공지사항</a>
+                    <a href="/bbs/notice/list.do" class="on">공지사항</a>
                     <a href="#LINK">홍보자료</a>
                     <a href="#LINK">FAQ</a>
                 </div>
@@ -139,7 +139,7 @@ function fn_reset_searchWrd(){
                         <div>
 							<ui:pagination paginationInfo="${paginationInfo}" type="bbs" jsFunction="fn_egov_select_List" />
                         </div>
-                        <button class="add" onclick="location.href='/egovframework-all-in-one/notice/write.do'" type="button">등록</button>
+                        <button class="add" onclick="location.href='/bbs/notice/write.do'" type="button">등록</button>
                     </div>
                 </div>
             </div>
